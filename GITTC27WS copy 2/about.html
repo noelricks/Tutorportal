@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About TC 27'</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<script src="https://kit.fontawesome.com/1ea75d76d9.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="about.css" /> 
+<!--COUNTER UP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <!--COUNTER UP-->
+</head>
+
+<nav>
+  <div class="menu-icon" id="menu-icon">
+     <span class="fas fa-bars"></span>
+  </div>
+  <div class="logo">
+     Top-Tier '27
+  </div>
+  <div class="nav-items">
+    <li>
+      <div class="cancel-icon">
+       <span class="fas fa-times"></span>
+     </div>
+   </li>
+   <br>
+     <li><a href="file:///Users/new/Desktop/TC27WS/home.html#">Home</a></li>
+     <li><a href="#">About</a></li>
+     <li><a href="#">S.G.A.</a></li>
+     <li><a href="#">Social</a></li>
+     <li><a href="#">Other</a></li>
+  </div>
+  <div class="search-icon">
+     <span class="fas fa-search"></span>
+  </div>
+  <form action="#">
+     <input type="search" class="search-data" placeholder="Search" required>
+     <button type="submit" class="fas fa-search"></button>
+  </form>
+</nav>
+
+<body>
+  <div class="container">
+  <div class="item1"> <!--BLUE SPACE -->
+  <div class="box">
+    <div id="overlay">
+    <h2>
+      About Tougaloo College
+    </h2>
+  </div>
+  </div>
+  <img src="stare.jpg" id="bodyimg1" width="1250" height="500">
+</div>
+</div>
+<div class="container">
+<div class="item2">
+  <h1 id="MS">Our Mission <br> Statement</h1>
+  <p id="MSP">Tougaloo College prepares its students to be lifelong learners who are committed to leadership and service in a global society through its diverse undergraduate and graduate programs. The College is accessible to all persons while making students aware of its rich legacy as an independent, historically black liberal arts institution, affiliated with the United Church of Christ and Christian Church (Disciples of Christ).</p>
+  <br>
+  <br>
+  <br>
+  <div id="source3">
+  <div id="source2">
+  <p id = "source1" class="source"><b> Discover Why TC is Right for You </b><i id = "icun" class="fa-solid fa-arrow-right"></i></p>
+  </div>
+</div>
+</div>
+<div class="item3">
+<img src = "miss.png" id="miss" width="750" height="750">
+</div>
+<div class="item5 color1">
+  <h1 id="MS">The <br> Vision</h1>
+  <p id="MSP">As a thriving internationally recognized institution, Tougaloo College will prepare its graduates to be productive in their time and lead the change for a better world. Tougaloo College applies current knowledge to prepare students for lifelong learning and emerging technologies, as well as holistically humane standards in a global society. Tougaloo College prepares its graduates to become self-directed learners and self-reliant persons capable of dealing with people, challenges, and issues.</p>
+</div>
+<div class="item6 color1">
+<img src="back.jpg" alt="chapel" id="chapel" width="750" height="750">
+</div>
+<div class="item7">
+  <h1 id="MS">Purpose <br> Statement</h1>
+  <p id="MSP">Tougaloo College acknowledges and respects its traditions; remains dedicated to the equality of all people; and continues to be a value-oriented community where students are guided by concerned faculty and staff. Tougaloo College offers undergraduate and graduate programs designed to encourage students to apply critical thought to all areas of life; to acquire a basic knowledge of the humanities, natural sciences, and social sciences; to develop skills required in selected professions; and to provide leadership and service in a changing world. Tougaloo College contributes to the social, health, and educational needs of the local and state communities through a program of community service. </p>
+</div>
+<div class="item8">
+<img src="purpose.jpg" alt="pres" id="pres" width="750" height="750">
+</div>
+
+</div>
+<script>
+  const menuBtn = document.querySelector(".menu-icon span");
+  const searchBtn = document.querySelector(".search-icon");
+  const cancelBtn = document.querySelector(".cancel-icon");
+  const items = document.querySelector(".nav-items");
+  const form = document.querySelector("form");
+  menuBtn.onclick = ()=>{
+    items.classList.add("active");
+    menuBtn.classList.add("hide");
+    searchBtn.classList.add("hide");
+    cancelBtn.classList.add("show");
+    document.body.classList.toggle('scroll-lock')
+  }
+  cancelBtn.onclick = ()=>{
+    items.classList.remove("active");
+    menuBtn.classList.remove("hide");
+    searchBtn.classList.remove("hide");
+    cancelBtn.classList.remove("show");
+    form.classList.remove("active");
+    document.body.classList.toggle('scroll-lock')
+  }
+  searchBtn.onclick = ()=>{
+    form.classList.add("active");
+    searchBtn.classList.add("hide");
+    cancelBtn.classList.add("show");
+  }
+</script>
+<!--COUNTER UP-->
+<div class="counter-up">
+  <div class="content">
+    <div class="box1">
+      <div class="icon"><i class="fas fa-history"></i></div>
+      <div class="counter">724</div>
+      <div class="text">Working Hours</div>
+    </div>
+    <div class="box1">
+      <div class="icon"><i class="fas fa-gift"></i></div>
+      <div class="counter">508</div>
+      <div class="text">Completed Projects</div>
+    </div>
+    <div class="box1">
+      <div class="icon"><i class="fas fa-users"></i></div>
+      <div class="counter">436</div>
+      <div class="text">Happy Clients</div>
+    </div>
+    <div class="box1">
+      <div class="icon"><i class="fas fa-award"></i></div>
+      <div class="counter">120</div>
+      <div class="text">Awards Received</div>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1200
+  });
+});
+</script>
+<!--COUNTER UP-->
+</body>
+
+
+
+<!-- FOOTER -->
+<div class="item4">
+<div class="footer">
+    <img src="footer.png" width="450" height="150" id="footerimg" alt="TC1869">
+  <div class="icons">
+  <a href="https://www.facebook.com/tougaloocollege"><i class="fa-brands fa-facebook"></i></a>
+  <a href="https://twitter.com/TCAthletics"><i class="fa-brands fa-twitter"></i></a>
+  <a href="https://www.youtube.com/@channeltougaloo"><i class="fa-brands fa-youtube"></i></a>
+  <a href="https://www.instagram.com/tougaloo27/"><i class="fa-brands fa-instagram"></i></a>
+</div>
+<br>
+<br>
+<p class="left-aligned-text">
+© 2024 Tougaloo College <br>
+500 West County Line Road, Tougaloo, MS 39174 <br>
+601.977.7700
+</p>
+</div>
+</div>
+<!-- END OF FOOTER ^ -->
+</div>
+<!-- END OF CONTAINER GRID ^ -->
+</html>

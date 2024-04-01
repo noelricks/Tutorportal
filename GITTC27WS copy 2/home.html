@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TC Tutor Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<script src="https://kit.fontawesome.com/1ea75d76d9.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="home.css" /> 
+</head>
+
+<div class="container1">
+<div class="container">
+<div class="row">
+<div class="header">
+  <div class="area" >
+    <ul class="circles">
+      <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+  <div class="img">
+  <img src="ttbrand.png" alt="brand" width="135" height="135">
+</div >
+  <h1>Tougaloo College</h1>
+  <p>Student Tutor Portal</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<nav>
+  <div class="menu-icon">
+     <span class="fas fa-bars"></span>
+  </div>
+  <div class="logo">
+     Student Center
+  </div>
+  <div class="nav-items">
+    <li>
+      <div class="cancel-icon">
+       <span class="fas fa-times"></span>
+     </div>
+   </li>
+   <br>
+     <li><a href="file:///Users/new/Desktop/TC27WS/home.html#">Home</a></li>
+     <li><a href="file:///Users/new/Desktop/TC27WS/about.html">About</a></li>
+     <li><a href="#">Tutors</a></li>
+     <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=L5jeqyyBmEqcNHe0JzXmbM7G-ur0rcFHuZ6r80k32zpUN1NZQk04SDNNUFJOVldaVFM1OTVSQlgyRC4u">Become a Tutor</a></li>
+     <li><a href="#">Other</a></li>
+  </div>
+  <div class="search-icon">
+     <span class="fas fa-search"></span>
+  </div>
+  <form action="#">
+     <input type="search" class="search-data" placeholder="Search" required>
+     <button type="submit" class="fas fa-search"></button>
+  </form>
+</nav>
+
+
+
+
+<script>
+  const menuBtn = document.querySelector(".menu-icon span");
+  const searchBtn = document.querySelector(".search-icon");
+  const cancelBtn = document.querySelector(".cancel-icon");
+  const items = document.querySelector(".nav-items");
+  const form = document.querySelector("form");
+  menuBtn.onclick = ()=>{
+    items.classList.add("active");
+    menuBtn.classList.add("hide");
+    searchBtn.classList.add("hide");
+    cancelBtn.classList.add("show");
+    document.body.classList.toggle('scroll-lock')
+  }
+  cancelBtn.onclick = ()=>{
+    items.classList.remove("active");
+    menuBtn.classList.remove("hide");
+    searchBtn.classList.remove("hide");
+    cancelBtn.classList.remove("show");
+    form.classList.remove("active");
+    document.body.classList.toggle('scroll-lock')
+  }
+  searchBtn.onclick = ()=>{
+    form.classList.add("active");
+    searchBtn.classList.add("hide");
+    cancelBtn.classList.add("show");
+  }
+</script>
+
+<div class="container2">
+<body>
+  <div class="bgwords">
+    Welcome To <br><br>
+    </div>
+    <div class="bgwords2">
+    Tougaloo College <br><br> Tutor Portal
+      </div>
+  <button class="bgbutton1"><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=L5jeqyyBmEqcNHe0JzXmbM7G-ur0rcFHuZ6r80k32zpUQUdFRldISVJRMkVYVFVEUlhTNkdKM01TSi4u">Appointment</a></button>
+  <button class="bgbutton2">Meet Tutors</button>
+  <button class="bgbutton3">Help</button>
+  <div id = "video">
+  <video width="100%" height="100%" autoplay muted loop>
+    <source src="tutor.mov" type="video/mp4">
+  </video>
+  <div class="rectangle"></div>
+</div>
+<div class="circle"></div>
+<div class="brands">
+  <img src="ttbrand.png" alt="brand" width="150" height="150">
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="label">
+<h1 style="font-size:5vw;">
+  Meet the Tutors of Tougaloo College!
+</h1>
+</div>
+  <div class="content">
+    <div class="pics">
+    <div class="homephotos">
+    <img src="friend.jpeg" alt="photo1" width="300" height="350">
+    <div class="desc"><b>Apply</b></div>
+    <hr class="card-divider">
+    <p class="desc1">Tougaloo College prepares its students to be lifelong learners
+      through its 
+       diverse undergraduate and graduate programs.</p>
+  </div>
+  <div class="homephotos">
+    <img src="schol.jpeg" alt="photo1" width="300" height="350">
+    <div class="desc"><b>Give</b></div>
+    <hr class="card-divider">
+    <p class="desc1"> 
+      Give your gift to the Eagle Queen online or in the form of 
+      checks, credit cards, money orders, stocks and 
+      securities or other assets.</p>
+  </div>
+  <div class="homephotos">
+    <img src="campus.png" alt="photo1" width="300" height="350">
+    <div class="desc"><b>Visit</b></div>
+    <hr class="card-divider">
+    <p class="desc1">
+      Talk with students, meet professors, walk through 
+      the buildings, speak with staff, and receive an in depth 
+      presentation about Tougaloo College.</p>
+  </div>
+  <div class="homephotos">
+    <img src="res.jpg" alt="photo1" width="300" height="350">
+    <div class="desc"><b>Resources</b></div>
+    <hr class="card-divider">
+    <p class="desc1">The Office of the Registrar is 
+      responsible for providing 
+      essential services related to the College's academic records.</p>
+  </div>
+  <div class="homephotos">
+    <img src="club.jpg" alt="photo1" width="300" height="350">
+    <div class="desc"><b>Clubs</b></div>
+    <hr class="card-divider">
+    <p class="desc1">Through group dynamics
+        and interaction, students learn more about themselves and 
+        others and how to work effectively in group situations.</p>
+  </div>
+  <div class="homephotos">
+    <img src="bask.jpg" alt="photo1" width="300" height="350">
+    <div class="desc"><b>Athletics</b></div>
+    <hr class="card-divider">
+    <p class="desc1">Our Tougaloo College Athletic Booster Club
+       is tremendously excited for the ongoing athletic season 
+       and we think it's the perfect time for you to become one 
+    </p>
+  </div>
+</div>
+
+  <br>
+  <br>
+  </div>
+  </div>
+</body>
+</div>
+
+
+<br>
+<br>
+<div class="body2">
+  <div class="rectangle1"></div>
+  <div class="square">
+    <h1>
+      <div class="sqlabel">
+      Goal of TC's Tutor Portal
+    </div>
+    </h1>
+    <p class = "sgatext">
+      Top Tier 27' is the Tougaloo College Class of 2027 official 
+      name. Our class goal is to build bonds with 
+      our classmates by providing resources to aid our peers as they
+       matriculate through our great institution. Here at Tougaloo 
+       College, we lead through Transformation and live up to the 
+       name, Top Notch! On this website, you will be able to explore, 
+       learn, and grow with Top Notch 27'. Thank you for visiting the 
+       page and continue to Fly High Eagles!
+    </p>
+    <button class="button button4">Help</button>
+    <button class="button button5">Our Campus</button>
+    <button class="button button6">About us</button>
+  </div>
+  <div class="rectangle2"></div>
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+  <div class="img1">
+    <img src="footer.png" alt="TC1869" width="450" height="150">
+  </div >
+  <div class="icons">
+  <a href="https://www.facebook.com/tougaloocollege"><i class="fa-brands fa-facebook"></i></a>
+  <a href="https://twitter.com/TCAthletics"><i class="fa-brands fa-twitter"></i></a>
+  <a href="https://www.youtube.com/@channeltougaloo"><i class="fa-brands fa-youtube"></i></a>
+  <a href="https://www.instagram.com/tougaloo27/"><i class="fa-brands fa-instagram"></i></a>
+</div>
+<br>
+<br>
+<p class="left-aligned-text">
+© 2024 Tougaloo College <br>
+500 West County Line Road, Tougaloo, MS 39174 <br>
+601.977.7700
+</p>
+</div>
+
+<!-- END OF FOOTER -->
+
+</html>
